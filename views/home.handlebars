@@ -1,0 +1,102 @@
+<style>
+body {
+    background-color: white;
+    text-align: center;
+}
+input[type=text] {
+	border: 1px solid black;
+	border-radius: 3px;
+}
+input[type=submit] {
+    border-radius: 3px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=reset] {
+    background-color: #FF0000;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+select {
+    width: 40%;
+    padding: 16px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+p    {color: black;}
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+.homepage {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 75%;
+    margin: 15px;
+}
+.registerButton {
+    background-color: #0000ff;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+</style>
+
+
+<div class="homepage">
+<div class="row">
+	<div class="column">
+	<p>
+	<h1>Dia-Bestie</h1>
+	<p/>
+	<img src="https://www.pharmaceutical-journal.com/Pictures/580xAny/7/9/7/1074797_Hospital-pharmacy-ss-18.png" alt="Pharmacy">
+	</div>
+	
+	<div class="column">
+	<form action="" method="post">		
+		<div id="login">
+			<h2>Member Login:</h2>
+			<p>
+			<input type="text" name="email" value="Email"><br>
+			<input type="text" name="password" value="Password"><br>
+			</p>
+			<div id="bottom-justified">
+				<INPUT type="submit" value="Submit"><INPUT type="Reset"value="Cancel">
+			</div>
+		</div>
+	</form>
+	<form action="/customerRegistration">
+
+		<div class="register">
+			<h2>Not a Member?</h2>
+			<INPUT id="registerButton" class="registerButton" type="submit" value="Register">
+		</div>
+	</form>
+
+</div>
+</div>

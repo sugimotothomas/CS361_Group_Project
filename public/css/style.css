@@ -1,0 +1,78 @@
+body {
+
+    margin: auto;
+}
+
+.navMenu {
+    width: 75%;
+    border-radius: 3px;
+    border: 1px solid black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.navItem {
+    float: left;
+}
+
+.navItem a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navItem:hover {
+    background-color: lightgrey;
+}
+.sideNav{
+	
+	background-color:lightgrey;
+	position: relative;
+	padding: 20px;
+	text-align: center;
+	width: 100px;
+	float: left;
+}
+
+.navItemSide a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navItemSide:hover {
+    background-color: #111;
+}
+.carContainer{
+	max-height:250px;	
+	min-height:250px;
+	display:block;
+	max-width:500px;
+}
+
+.sideNavMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.innerDiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+

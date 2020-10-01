@@ -1,0 +1,107 @@
+<style>
+body {background-color: white;}
+
+input[type=text] {
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+input[type=button], input[type=submit] {
+    border-radius: 3px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    background-color: #FF0000;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+td, tr {
+	border: 1px solid black;
+}
+
+table {
+	border-radius: 3px;
+	border: 1px solid black;
+	margin: 2.5%;
+}
+select {
+    width: 40%;
+    padding: 16px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+p    {color: black;}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.listing {
+
+
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 75%;
+    margin: 15px;
+}
+
+</style>
+
+<body>
+<div class="listing">
+<h1>Product Search Return Example</h1>
+<p>
+
+<table class="productTable" style="width:95%">
+    <tr>
+        <th>Product Name</th>
+        <th>Supplier</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Date Manufactured</th>
+    </tr>
+    {{#if product}}
+        {{#each product}}
+            <tr>
+                <td>{{this.productName}}</td>
+                <td>{{this.supplierName}}</td>
+                <td>{{this.quantity}}</td>
+                <td>${{this.cost}}</td>
+                <td>{{this.created}}</td>
+            </tr>
+        {{/each}}
+    {{/if}}
+</table>
+</P>
+</div>
+</body>
+
+
+
+
